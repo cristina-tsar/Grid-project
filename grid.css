@@ -368,7 +368,7 @@ body {
         grid-row: 1;
         grid-column: 4;       
         grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 100px;       
+        grid-template-rows: 1fr 45px;       
     }
     .news-6 {
         grid-row: 2;
