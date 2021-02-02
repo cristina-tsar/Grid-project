@@ -7,7 +7,7 @@ header {
     background-color: palevioletred;
     position: sticky;
     top: 0;
-    z-index: 10px;
+    z-index: 10;
 }
 nav {
     list-style: none;   
