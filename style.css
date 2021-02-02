@@ -44,6 +44,10 @@ nav a:hover {
 }
 .main {
     background-color: whitesmoke;
+    background-image: url("img/diament.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1 {
     font-size: 31px;
@@ -60,22 +64,24 @@ h1 {
 [class*="new-"] {
     background-repeat: no-repeat;
     background-position: center;    
-    background-size: cover;    
+    background-size: cover; 
+    transition: 1.5s ease-in-out 0s;   
 }
 [class*="news-"] > a {
    cursor: pointer; 
    color:palevioletred;
    border-top: palevioletred 1px solid;
-   border-bottom: palevioletred 1px solid;    
+   border-bottom: palevioletred 1px solid; 
+   transition: color 2s ease-in-out;   
 }
 [class*="news-"]:hover > a {
-    color:#a9a59f;    
-    transition: color .25s ease;
-    transform: scale(1.05);
-    font-weight: bold;
+    color:#8d8b89; 
+    transform: scale(1.05);    
+    transition: 1.5s ease-in-out 0s;
 }
 [class*="news-"]:hover > [class*="new-"], [class*="block-f-"]:hover > [class*="fashion-photo-"] {
    filter: grayscale(90%);
+   transform: scale(1.03);
 }
 .new-block-1 {
     background-image: url(img/fashion\ week.jpg);
@@ -105,13 +111,16 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    background-size: cover;       
+    background-size: cover; 
+    transition: 1s ease-in-out;      
 }
 .news-5:hover, .news-6:hover {
-    filter: grayscale(90%);    
+    filter: grayscale(90%); 
+    transform: scale(1.03);  
 }
 .title-style {
-    color:palevioletred; 
+    color:palevioletred;
+    padding: 0 7px; 
     line-height: 1.5; 
     align-self: center;   
     text-align: center;
@@ -134,19 +143,19 @@ h1 {
     position: relative;  
 }
 [class*="star-blocks-"] {    
-    background-color: rgba(218, 155, 176, 0.514);
-    
-    border: 2px solid rgba(218, 155, 176, 0.514); 
+    background-color: rgba(218, 155, 176, 0.842);
+    transition-duration: 1.5s; 
+    border: 2px solid rgba(218, 155, 176, 0.842); 
 }
 [class*='star-blocks-']:hover {
-    background-color: #bebebe;
+    background-color: #a3a2a2a1;
     opacity: 0.8;  
-    transition: #bebebe .25s ease;  
+    transition: #a7a6a665 0.7s ease-in-out;  
 }
 [class*="photo-star-"] {    
     background-repeat: no-repeat;
     background-size: cover; 
-    background-color: whitesmoke;   
+    background-color: whitesmoke;       
 }
 .photo-star-GalGadot {
     background-image: url("img/GalGadot.png");
@@ -172,7 +181,7 @@ h1 {
     row-gap: 10px;
     justify-items: center;
     align-items: center;    
-    color: rgb(126, 126, 126);
+    color: rgb(100, 100, 100);
 }
 .name {
     padding: 0 5px 5px;
@@ -182,7 +191,9 @@ h1 {
 .learnmore-btn {
     display: none;
     justify-self: center;
-    top: -525%; 
+    top: -2839%;
+    align-self: center; 
+    transition: 2s ease-in-out 0s; 
 }
 [class*=star-blocks-]:hover > .learnmore-btn {
     display: block;
@@ -192,6 +203,7 @@ h1 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 2s ease-in-out 0s; 
 }
 .fashion-photo-1 {
     background-image: url("img/sexist.jpg");
@@ -218,15 +230,17 @@ h1 {
     justify-self: end;
     border-top: 1px solid palevioletred;   
     border-bottom: 1px solid palevioletred; 
-    background-color: rgba(126, 126, 126, 0.226);    
+    background-color: rgba(228, 128, 186, 0.267);
+    transition: 1s ease-in-out 0s;     
 }
 .pad-text {
     padding-left: 20px;      
 }
 [class*="block-f-"]:hover > a {
-    transition: color .25s ease;
-    transform: scale(1.01);
+    transform: scale(1);
     font-weight: bold;
+    transition: 2s ease-in-out 0s; 
+    color:#858383f1; 
 }
 .slider {
     background-image: url("img/Tiffany+&+Co.jpg");

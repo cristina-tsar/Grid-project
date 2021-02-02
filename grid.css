@@ -58,7 +58,7 @@ body {
 [class*=star-blocks-] {
     display: inline-grid;
     grid-template-columns: 181px;
-    grid-template-rows: 240px 135px;
+    grid-template-rows: 240px 135px 7px;
     row-gap: 10px;
 }
 [class*="news-"]{
@@ -111,7 +111,7 @@ body {
 .footer-row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 110px 60px;
+    grid-template-rows: 25px 110px 60px;
     padding: 10px 5px;    
     color: whitesmoke;    
 }
@@ -119,11 +119,10 @@ body {
     text-decoration: none;
     color: whitesmoke;
 }
-
 .footer-background {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 100px 20px;    
+    grid-template-rows: 90px 20px;    
     grid-column: 1;
     grid-row: 2;
     text-align: center;  
@@ -137,6 +136,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row: 3;
+    grid-gap: 10px;
+    align-self: center;
 }
 @media(min-width:768px) {
     .container {
@@ -149,7 +150,8 @@ body {
         row-gap: 50px;    
     } 
     [class*=star-blocks-] {
-        row-gap: 12px;
+        row-gap: 10px;
+        grid-template-rows: 240px 135px 7px;
     }   
     .stars {
         grid-row: 1/-1;
@@ -189,7 +191,7 @@ body {
     }
     .fashion-block {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 234px);
+        grid-template-rows: repeat(3, 259px);
     } 
     .block-f-1 {
         grid-template-columns: auto 185px;
@@ -220,8 +222,7 @@ body {
         grid-row: 1;
     }
     .footer-soc {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-row: 1;
         grid-column: 3;
     }   
@@ -229,6 +230,9 @@ body {
 @media(min-width:992px) {
     .container {
         max-width: 960px;
+    }
+    [class*=star-blocks-] {
+        row-gap: 12px;
     }
     .item-news {
         display: grid;
@@ -270,7 +274,7 @@ body {
     }
     .fashion-block {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 195px);
+        grid-template-rows: repeat(3, 230px);
     }
     .fashion-text {
         font-size: 15px;
@@ -298,13 +302,10 @@ body {
 @media(min-width:1200px) {
     .container {
         max-width: 1140px;
-    } 
-    .stars-block {
-        row-gap: 15px;
-    } 
+    }    
     [class*=star-blocks-] {
         grid-template-columns: 190px;
-        grid-template-rows: 250px 147px;
+        grid-template-rows: 250px 147px 7px;
     } 
     .item-news {        
         grid-template-columns: repeat(3, 295px);
@@ -320,7 +321,8 @@ body {
         font-size: 25px;
     }
     .fashion-block {
-        grid-template-columns: repeat(2, 1fr);               
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: repeat(3, 223px);             
     }    
     .block-f-1 {
         grid-template-columns: 635px 225px;
@@ -338,7 +340,7 @@ body {
     }
     .block-f-4 {
         grid-template-columns: 250px auto;
-        grid-template-rows: 195px;
+        grid-template-rows: 220px;
         grid-column: 1/-1;    
     }
 }
@@ -357,7 +359,7 @@ body {
         gap: 15px;            
     } 
     [class*=star-blocks-]  {
-        grid-template-rows: 204px 133px;
+        grid-template-rows: 204px 133px 7px;
     }  
     .item-news {
         display: grid;
@@ -368,7 +370,7 @@ body {
         grid-row: 1;
         grid-column: 4;       
         grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 100px;       
+        grid-template-rows: 1fr 45px;       
     }
     .news-6 {
         grid-row: 2;
@@ -396,14 +398,18 @@ body {
         grid-row: 2;
         grid-template-columns: 285px 150px;
     }
+    .block-f-4 {
+        grid-template-rows: 270px;
+    }
 }
 
 /*only mobile*/
 @media(max-width:668px) {
     .header-row {
         display: grid;
-        grid-template-rows: 2fr;
+        grid-template-rows: 1fr auto;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
     }
     .logo {
         grid-column: 1/-1;        
@@ -411,6 +417,11 @@ body {
     .menu {
         grid-column: 1;
         grid-row: 2;
+    }
+    .block-search {
+        grid-template-columns: 85px 25px;
+        grid-template-rows: 23px;
+        padding: 2px;        
     }
     .search {
         grid-row: 2;
@@ -429,7 +440,7 @@ body {
     [class*=star-blocks-] {
         display: inline-grid;
         grid-template-columns: 286px;
-        grid-template-rows: 240px 105px;
+        grid-template-rows: 240px 105px 7px;
         row-gap: 10px;
     }
     .block-f-1 {
@@ -446,6 +457,8 @@ body {
     }
     .footer-text {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 10px;
+        padding: 5px 0;
     }
 }
